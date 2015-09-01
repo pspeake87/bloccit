@@ -15,6 +15,9 @@ group :production do
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 
+gem 'faker'
+
+gem 'pry-rails'
 #use twitter bootstrap 
 gem 'bootstrap-sass'
 # Use Uglifier as compressor for JavaScript assets
