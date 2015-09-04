@@ -16,7 +16,18 @@ require 'faker'
      body: Faker::Lorem.paragraph
    )
  end
+
+ 10.times do
+   Question.create!(
+     title:  Faker::Lorem.sentence,
+     body:   Faker::Lorem.paragraph,
+     resolved: false
+   )
+ end
+
  
  puts "Seed finished"
  puts "#{Post.count} posts created"
+ puts "#{Question.count} questions created"
  puts "#{Comment.count} comments created"
+
