@@ -16,6 +16,7 @@ group :production do
 gem 'sass-rails', '~> 5.0'
 
 gem 'faker'
+gem 'figaro', '1.0'
 
 gem 'devise'
 gem 'pry-rails'
