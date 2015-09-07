@@ -17,6 +17,7 @@ gem 'sass-rails', '~> 5.0'
 
 gem 'faker'
 
+gem 'devise'
 gem 'pry-rails'
 #use twitter bootstrap 
 gem 'bootstrap-sass'
