@@ -18,9 +18,11 @@ gem 'redcarpet'
 gem 'faker'
 gem 'figaro', '1.0'
 gem 'pundit'
-
+gem 'carrierwave'
+gem 'mini_magick'
 gem 'devise'
 gem 'pry-rails'
+gem 'fog'
 #use twitter bootstrap 
 gem 'bootstrap-sass'
 # Use Uglifier as compressor for JavaScript assets
