@@ -25,7 +25,12 @@ class AvatarUploader < CarrierWave::Uploader::Base
   # end
 
   # Process files as they are uploaded:
-  process :resize_to_fill => [200, 300]
+ process :resize_to_fill => [200, 300]
+
+
+
+
+ #lsdan;lfsdna;lsdnasd
 
  version :tiny do
      process resize_to_fill: [20, 20]
