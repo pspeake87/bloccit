@@ -23,6 +23,7 @@ gem 'mini_magick'
 gem 'devise'
 gem 'pry-rails'
 gem 'fog'
+gem 'will_paginate', '~> 3.0.5'
 #use twitter bootstrap 
 gem 'bootstrap-sass'
 # Use Uglifier as compressor for JavaScript assets
