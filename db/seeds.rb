@@ -1,7 +1,7 @@
 require 'faker'
  
  # Create Users
- 5.times do
+ 10.times do
    user = User.new(
      name:     Faker::Name.name,
      email:    Faker::Internet.email,
@@ -12,7 +12,7 @@ require 'faker'
  end
  users = User.all
 
- 15.times do
+ 100.times do
    Topic.create!(
      name:         Faker::Lorem.sentence,
      description:  Faker::Lorem.paragraph
@@ -29,7 +29,7 @@ require 'faker'
  # The `save` method then saves this User to the database.
  # Create Posts
 
- 50.times do
+ 500.times do
    Post.create!(
      user:   users.sample,
      topic:  topics.sample,
@@ -40,7 +40,7 @@ require 'faker'
  posts = Post.all
  
  # Create Comments
- 100.times do
+ 1000.times do
    Comment.create!(
      post: posts.sample,
      body: Faker::Lorem.paragraph
