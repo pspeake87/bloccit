@@ -6,12 +6,15 @@ class PostsController < ApplicationController
     @comments = @post.comments
     @comment = @post.comments.build
     authorize @post
+    
+
   end
 
   def new
     @topic = Topic.find(params[:topic_id])
     @post = Post.new
     authorize @post
+    
   end
 
   def create
@@ -20,6 +23,7 @@ class PostsController < ApplicationController
      @post.user = current_user
      @post.topic = @topic
      authorize @post
+     authorize :comment, :create?
      if @post.save
        flash[:notice] = "Post was saved."
        redirect_to [@topic, @post]
