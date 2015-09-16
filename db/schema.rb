@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 20150914171115) do
     t.integer  "user_id"
     t.integer  "topic_id"
     t.integer  "summary_id"
+    t.string   "image"
   end
 
   add_index "posts", ["summary_id"], name: "index_posts_on_summary_id"
